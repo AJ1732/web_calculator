@@ -45,17 +45,10 @@ Codebase Layout and Naming Conventions
 
 ## Contributing Guide
 
-   We welcome community contributions!
-  Please follow the contribution guidelines outlined in CONTRIBUTING.md.
+      We welcome community contributions!
+      Please follow the contribution guidelines outlined in CONTRIBUTING.md.
 
 ## License
 
-This project is licensed under the [Name of License] license (see LICENSE file for details).
+    This project is licensed under the [Name of License] license (see LICENSE file for details).
 
-## Additional Notes
-
-    Author contact: [GitHub](https://github.com/AJ1732)
-    Known limitations: _Pending_
-    <!-- [List any known bugs or compatibility issues] -->
-    Roadmap: _Pending_
-    <!-- [Briefly outline your plans for future development] -->
