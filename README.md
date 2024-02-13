@@ -8,11 +8,13 @@ This repository contains the source code for a web calculator built using React 
 * Clear and user-friendly interface
 * Responsive design for optimal viewing on different devices
 
+**Live Link**
+  [Web Calculator](https://1732-web-calculator.netlify.app/)
+
 **Technologies Used**
 
 * React: JavaScript library for building user interfaces
 * Tailwind CSS: Utility-first CSS framework for rapid styling
-* [Optional: Other libraries or dependencies as needed]
 
 **Getting Started**
 
