@@ -1,8 +1,61 @@
-# React + Vite
+# React Web Calculator with Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for a web calculator built using React and Tailwind CSS. It offers a variety of features, including:
 
-Currently, two official plugins are available:
+* Basic arithmetic operations (+, -, *, /)
+* Parentheses for complex calculations
+* Memory buttons for storing and recalling values
+* Clear and user-friendly interface
+* Responsive design for optimal viewing on different devices
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Technologies Used**
+
+* React: JavaScript library for building user interfaces
+* Tailwind CSS: Utility-first CSS framework for rapid styling
+* [Optional: Other libraries or dependencies as needed]
+
+**Getting Started**
+
+1. **Clone the repository:**
+
+  ```bash
+   git clone https://github.com/AJ1732/web_calculator.git
+  ```
+
+2. **Install dependencies:**
+
+  ```bash
+    cd react-web-calculator
+    npm install
+  ```
+3. **Start the development server:**
+
+  ```bash
+   npm run dev
+  ```
+
+Access the application at http://localhost:3000 (or the port specified in your package.json).
+
+## Development Instructions
+Codebase Layout and Naming Conventions
+
+  * The codebase follows a component-based structure, with separate folders for components, styles, and tests.
+  * Components are named descriptively (e.g., Calculator, Button, Display).
+  *  Files are named according to their function (e.g., calculator.jsx, styles.css, button.test.js).
+
+## Contributing Guide
+
+   We welcome community contributions!
+  Please follow the contribution guidelines outlined in CONTRIBUTING.md.
+
+## License
+
+This project is licensed under the [Name of License] license (see LICENSE file for details).
+
+## Additional Notes
+
+    Author contact: [GitHub](https://github.com/AJ1732)
+    Known limitations: _Pending_
+    <!-- [List any known bugs or compatibility issues] -->
+    Roadmap: _Pending_
+    <!-- [Briefly outline your plans for future development] -->
