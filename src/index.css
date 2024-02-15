@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 :root {
-  background-color: #ccc;
+  background-color: #DAF0FF;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  transition: color 0.6s;
 }
 /* #FFFFFF99, #FFFFFF66 60% 40% */
 /* border-radius: 0.75rem;

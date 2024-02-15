@@ -8,6 +8,9 @@ export default {
     extend: {
       colors: {
         'input-text': '#818181',
+        'blue-dark': '#109DFF',
+        'blue-darker': '#17181A',
+        'blue-light': '#DAF0FF',
 
         'lm-bg': '#F7F8FB',
         'lm-num-btn-bg': '#FFFFFF',

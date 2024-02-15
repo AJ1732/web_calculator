@@ -1,14 +1,15 @@
-import { useState } from 'react'
+import { useTheme } from "./Theme/ThemeProvider";
+import Header from "./components/Sections/Header"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { theme } = useTheme();
+  const themeBoolean = theme === 'light';
 
   return (
-    <div className='font-poppins'>
-      <h1 className='
-        text-3xl font-bold
-        
-      '>Web Calculator</h1>      
+    <div className={` 
+      min-h-screen | px-12 py-4 | font-poppins 
+    `}>
+      <Header />
     </div>
   )
 }
