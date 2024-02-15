@@ -1,4 +1,5 @@
 import { useTheme } from "./Theme/ThemeProvider";
+import Calc from "./components/Sections/Calc";
 import Header from "./components/Sections/Header"
 
 function App() {
@@ -8,8 +9,11 @@ function App() {
   return (
     <div className={` 
       min-h-screen | px-12 py-4 | font-poppins 
+      duration-300 ease-in-out
+      grid gap-10
     `}>
       <Header />
+      <Calc />
     </div>
   )
 }

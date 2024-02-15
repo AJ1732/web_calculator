@@ -18,9 +18,8 @@ const Switch = () => {
         flex items-center flex-shrink-0
         duration-300 ease-in-out
         after:w-6 after:h-6 | after:rounded-full after:shadow-md after:duration-300
-        after:${themeBoolean? 'bg-blue-light': 'bg-blue-darker'}
-        peer-checked:${themeBoolean? 'bg-blue-light': 'bg-blue-darker'}
-        peer-checked:after:translate-x-6
+        ${themeBoolean? 'after:bg-blue-light': 'after:bg-blue-darker'}
+        peer-checked:after:translate-x-6 peer-checked:bg-blue-dark 
         group-hover:after:translate-x-0.5
       `} />
     </label>

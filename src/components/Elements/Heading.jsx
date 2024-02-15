@@ -8,6 +8,7 @@ const Heading = ({ children }) => {
   return (
     <h1 className={`
       text-3xl font-bold
+      duration-300 ease-in-out
       ${ themeBoolean ? 'text-blue-dark': 'text-blue-darker' }
     `}>
       {children}

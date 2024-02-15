@@ -7,10 +7,16 @@ const Calc = () => {
 
   return (
     <main className={`
-      max-w-[375rem]
-      ${ themeBoolean? '': '' }
+      max-w-96 max-h-[50.75rem] w-96 h-[50.75rem] 
+      m-auto | duration-300 ease-in-out | rounded-[2.5rem] 
+      ${ themeBoolean? 'bg-white': 'bg-blue-darker' }
     `}>
       
+      <div className={`
+        
+      `}>
+
+      </div>
     </main>
   )
 }
