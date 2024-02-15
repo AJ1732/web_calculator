@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTheme } from '../../Theme/ThemeProvider';
 import NumButton from '../Buttons/NumButton';
+import OperatorButton from '../Buttons/OperatorButton';
 
 const Calc = () => {
   const { theme } = useTheme();
@@ -34,7 +35,12 @@ const Calc = () => {
         {[7, 8, 9].map(item => (
           <NumButton key={item} className='row-start-5 | bg-[#ccc] rounded-2xl'>{item}</NumButton>
         ))}
-        <div className='row-start-6 col-start-1 col-span-2 | bg-[#ccc] rounded-2xl'>0</div>
+        <button 
+          className={` 
+            row-start-6 col-start-1 col-span-2
+            text-2xl font-medium rounded-2xl
+            ${themeBoolean? 'bg-lm-num-btn-bg text-lm-num-btn-text': 'bg-dm-num-btn-bg text-dm-num-btn-text'} `}
+        >0</button>
         
         {/* ACTION BUTTONS */}
         {['Ac', '←', '/'].map(item => (

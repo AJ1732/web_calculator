@@ -1,8 +1,24 @@
 import React from 'react'
+import { useTheme } from '../../Theme/ThemeProvider';
 
-const OperatorButton = () => {
+const OperatorButton = ({ children }) => {
+  const { theme } = useTheme();
+  const themeBoolean = theme === 'light';
+
+  const handleClick = (e) => {
+    console.log(e.target.value, 'clicked!');
+  }
+
   return (
-    <div>OperatorButton</div>
+    <button 
+      className={` 
+        rounded-2xl text-2xl font-medium
+        ${themeBoolean? 'bg-lm-operator-btn-bg text-lm-operator-btn-text': 'bg-dm-operator-btn-bg text-dm-operator-btn-text'} `}
+      value={children}
+      onClick={handleClick}
+    >
+      {children}
+    </button>
   )
 }
 
