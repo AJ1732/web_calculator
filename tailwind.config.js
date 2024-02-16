@@ -20,6 +20,8 @@ export default {
         'lm-answer-text': '#424242',
         'lm-action-btn-bg': '#FFFFFF',
         'lm-action-btn-text': '#858585',
+        'lm-function-btn-bg': '#FFFFFF',
+        'lm-function-btn-text': '#7CC9FF',
         'lm-equal-btn-bg': '#19ACFF',
         'lm-equal-btn-text': '#B2DAFF',
         
@@ -31,6 +33,8 @@ export default {
         'dm-answer-text': '#FFFFFF',
         'dm-action-btn-bg': '#616161',
         'dm-action-btn-text': '#A5A5A5',
+        'dm-function-btn-bg': '#303136',
+        'dm-function-btn-text': '#29A8FF',
         'dm-equal-btn-bg': '#1991FF',
         'dm-equal-btn-text': '#B2DAFF',
       },
