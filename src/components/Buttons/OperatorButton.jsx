@@ -13,6 +13,7 @@ const OperatorButton = ({ children, className }) => {
     <button 
       className={` 
         ${className}
+        duration-300 ease-in-out
         rounded-2xl text-2xl font-medium
         ${themeBoolean? 'bg-lm-operator-btn-bg text-lm-operator-btn-text': 'bg-dm-operator-btn-bg text-dm-operator-btn-text'} `}
       value={children}

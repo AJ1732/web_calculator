@@ -14,6 +14,7 @@ const EqualButton = ({ children, className }) => {
     <button 
       className={` 
         ${className}
+        duration-300 ease-in-out
         rounded-2xl text-2xl font-medium
         ${themeBoolean? 'bg-lm-equal-btn-bg text-lm-equal-btn-text': 'bg-dm-operator-btn-bg text-dm-operator-btn-text'} `}
       value={children}

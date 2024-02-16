@@ -31,10 +31,10 @@ const Calc = () => {
           <NumButton key={item} className='row-start-3'>{item}</NumButton>
         ))}
         {[4, 5, 6].map(item => (
-          <NumButton key={item} className='row-start-4 | bg-[#ccc] rounded-2xl'>{item}</NumButton>
+          <NumButton key={item} className='row-start-4 | rounded-2xl'>{item}</NumButton>
         ))}
         {[7, 8, 9].map(item => (
-          <NumButton key={item} className='row-start-5 | bg-[#ccc] rounded-2xl'>{item}</NumButton>
+          <NumButton key={item} className='row-start-5 | rounded-2xl'>{item}</NumButton>
         ))}
         <NumButton 
           className={` 
@@ -42,19 +42,20 @@ const Calc = () => {
             text-2xl font-medium rounded-2xl
             ${themeBoolean? 'bg-lm-num-btn-bg text-lm-num-btn-text': 'bg-dm-num-btn-bg text-dm-num-btn-text'} `}
         >0</NumButton>
+        <NumButton className='row-start-6 col-start-3 | rounded-2xl'>.</NumButton>
         
         {/* ACTION BUTTONS */}
-        {['Ac', '←', '/'].map(item => (
+        {['Ac', '←'].map(item => (
           <div key={item} className='row-start-2 | bg-[#ccc] rounded-2xl'>{item}</div>
         ))}
 
         {/* OPERATOR BUTTONS */}
-        <NumButton className='row-start-6 col-start-3 | bg-[#ccc] rounded-2xl'>.</NumButton>
-        <OperatorButton className='row-start-2 | bg-[#ccc] rounded-2xl'>*</OperatorButton>
-        <OperatorButton className='row-start-3 col-start-4 | bg-[#ccc] rounded-2xl'>-</OperatorButton>
-        <div className='grid grid-cols-subgrid gap-5 row-start-4 row-span-3 rounded-2xl |'>
-          <OperatorButton className='row-start-1 row-span-1 | bg-[#ccc] rounded-2xl'>+</OperatorButton>
-          <EqualButton className='row-start-2 row-span-1 | bg-[#ccc] rounded-2xl'>=</EqualButton>
+        <OperatorButton className='row-start-2 | rounded-2xl'>/</OperatorButton>
+        <OperatorButton className='row-start-2 | rounded-2xl'>*</OperatorButton>
+        <OperatorButton className='row-start-3 col-start-4 | rounded-2xl'>-</OperatorButton>
+        <div className='grid grid-cols-subgrid gap-5 row-start-4 row-span-3 rounded-2xl'>
+          <OperatorButton className='row-start-1 row-span-1 | rounded-2xl'>+</OperatorButton>
+          <EqualButton className='row-start-2 row-span-1 | rounded-2xl'>=</EqualButton>
         </div>
       </div>
     </main>
