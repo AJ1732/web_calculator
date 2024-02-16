@@ -4,6 +4,7 @@ import NumButton from '../Buttons/NumButton';
 import OperatorButton from '../Buttons/OperatorButton';
 import EqualButton from '../Buttons/EqualButton';
 import ActionButton from '../Buttons/ActionButton';
+import FunctionButton from '../Buttons/FunctionButton';
 
 const Calc = () => {
   const { theme } = useTheme();
@@ -24,7 +25,7 @@ const Calc = () => {
       `}>
         {/* FUNCTION BUTTONS */}
         {['e', 'µ', 'sin', 'deg'].map(item => (
-          <div key={item} className='row-start-1 | bg-[#ccc] rounded-2xl'>{item}</div>
+          <FunctionButton key={item} className='row-start-1 | bg-[#ccc] rounded-2xl'>{item}</FunctionButton>
         ))}
 
         {/* NUMBER BUTTONS */}

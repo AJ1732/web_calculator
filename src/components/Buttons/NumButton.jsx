@@ -14,7 +14,7 @@ const NumButton = ({ children, className }) => {
       className={` 
         ${className}
         duration-300 ease-in-out
-        rounded-2xl text-2xl font-medium
+        rounded-2xl text-3xl font-medium
         ${themeBoolean? 'bg-lm-num-btn-bg text-lm-num-btn-text': 'bg-dm-num-btn-bg text-dm-num-btn-text'} `}
       value={children}
       onClick={handleClick}

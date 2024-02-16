@@ -14,7 +14,7 @@ const FunctionButton = ({ children, className }) => {
       className={` 
         ${className}
         duration-300 ease-in-out
-        rounded-2xl text-2xl font-medium
+        rounded-2xl text-xl font-medium
         ${themeBoolean? 'bg-lm-function-btn-bg text-lm-function-btn-text': 'bg-dm-function-btn-bg text-dm-function-btn-text'} `}
       value={children}
       onClick={handleClick}
