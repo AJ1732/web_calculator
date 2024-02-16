@@ -9,10 +9,6 @@ const NumButton = ({ children, className }) => {
     console.log(e.target.value, 'clicked!');
   }
 
-  const childStyle = ` 
-    rounded-2xl text-2xl font-medium
-    ${themeBoolean? 'bg-lm-num-btn-bg text-lm-num-btn-text': 'bg-dm-num-btn-bg text-dm-num-btn-text'} `
-
   return (
     <button 
       className={` 
