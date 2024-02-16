@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTheme } from '../../Theme/ThemeProvider';
 
-const OperatorButton = ({ children }) => {
+const OperatorButton = ({ children, className }) => {
   const { theme } = useTheme();
   const themeBoolean = theme === 'light';
 
@@ -12,6 +12,7 @@ const OperatorButton = ({ children }) => {
   return (
     <button 
       className={` 
+        ${className}
         rounded-2xl text-2xl font-medium
         ${themeBoolean? 'bg-lm-operator-btn-bg text-lm-operator-btn-text': 'bg-dm-operator-btn-bg text-dm-operator-btn-text'} `}
       value={children}

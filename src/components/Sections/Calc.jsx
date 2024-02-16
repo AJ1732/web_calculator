@@ -2,6 +2,7 @@ import React from 'react'
 import { useTheme } from '../../Theme/ThemeProvider';
 import NumButton from '../Buttons/NumButton';
 import OperatorButton from '../Buttons/OperatorButton';
+import EqualButton from '../Buttons/EqualButton';
 
 const Calc = () => {
   const { theme } = useTheme();
@@ -35,12 +36,12 @@ const Calc = () => {
         {[7, 8, 9].map(item => (
           <NumButton key={item} className='row-start-5 | bg-[#ccc] rounded-2xl'>{item}</NumButton>
         ))}
-        <button 
+        <NumButton 
           className={` 
             row-start-6 col-start-1 col-span-2
             text-2xl font-medium rounded-2xl
             ${themeBoolean? 'bg-lm-num-btn-bg text-lm-num-btn-text': 'bg-dm-num-btn-bg text-dm-num-btn-text'} `}
-        >0</button>
+        >0</NumButton>
         
         {/* ACTION BUTTONS */}
         {['Ac', '←', '/'].map(item => (
@@ -48,12 +49,12 @@ const Calc = () => {
         ))}
 
         {/* OPERATOR BUTTONS */}
-        <div className='row-start-2 | bg-[#ccc] rounded-2xl'>*</div>
-        <div className='row-start-6 col-start-3 | bg-[#ccc] rounded-2xl'>.</div>
-        <div className='row-start-3 col-start-4 | bg-[#ccc] rounded-2xl'>-</div>
+        <NumButton className='row-start-6 col-start-3 | bg-[#ccc] rounded-2xl'>.</NumButton>
+        <OperatorButton className='row-start-2 | bg-[#ccc] rounded-2xl'>*</OperatorButton>
+        <OperatorButton className='row-start-3 col-start-4 | bg-[#ccc] rounded-2xl'>-</OperatorButton>
         <div className='grid grid-cols-subgrid gap-5 row-start-4 row-span-3 rounded-2xl |'>
-          <div className='row-start-1 row-span-1 | bg-[#ccc] rounded-2xl'>+</div>
-          <div className='row-start-2 row-span-1 | bg-[#ccc] rounded-2xl'>=</div>
+          <OperatorButton className='row-start-1 row-span-1 | bg-[#ccc] rounded-2xl'>+</OperatorButton>
+          <EqualButton className='row-start-2 row-span-1 | bg-[#ccc] rounded-2xl'>=</EqualButton>
         </div>
       </div>
     </main>
