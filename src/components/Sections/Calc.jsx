@@ -3,6 +3,7 @@ import { useTheme } from '../../Theme/ThemeProvider';
 import NumButton from '../Buttons/NumButton';
 import OperatorButton from '../Buttons/OperatorButton';
 import EqualButton from '../Buttons/EqualButton';
+import ActionButton from '../Buttons/ActionButton';
 
 const Calc = () => {
   const { theme } = useTheme();
@@ -46,7 +47,7 @@ const Calc = () => {
         
         {/* ACTION BUTTONS */}
         {['Ac', '←'].map(item => (
-          <div key={item} className='row-start-2 | bg-[#ccc] rounded-2xl'>{item}</div>
+          <ActionButton key={item} className='row-start-2 | bg-[#ccc] rounded-2xl'>{item}</ActionButton>
         ))}
 
         {/* OPERATOR BUTTONS */}
