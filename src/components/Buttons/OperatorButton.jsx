@@ -8,6 +8,7 @@ const OperatorButton = ({ children, className }) => {
 
   return (
     <Button 
+      type={`operator`}
       className={` 
         ${className}
         ${themeBoolean? 'bg-lm-operator-btn-bg text-lm-operator-btn-text': 'bg-dm-operator-btn-bg text-dm-operator-btn-text'} `}

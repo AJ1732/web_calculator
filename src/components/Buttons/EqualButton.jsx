@@ -8,6 +8,7 @@ const EqualButton = ({ children, className }) => {
 
   return (
     <Button 
+      type={`equal`}
       className={` 
         ${className}
         ${themeBoolean? 'bg-lm-equal-btn-bg text-lm-equal-btn-text': 'bg-dm-operator-btn-bg text-dm-operator-btn-text'} `}

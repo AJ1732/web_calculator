@@ -8,6 +8,7 @@ const FunctionButton = ({ children, className }) => {
 
   return (
     <Button 
+      type={`function`}
       className={` 
         ${className}
         ${themeBoolean? 'bg-lm-function-btn-bg text-lm-function-btn-text': 'bg-dm-function-btn-bg text-dm-function-btn-text'} `}

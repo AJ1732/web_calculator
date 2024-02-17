@@ -8,6 +8,7 @@ const ActionButton = ({ children, className }) => {
 
   return (
     <Button 
+      type={`action`}
       className={` 
         ${className}
         ${themeBoolean? 'bg-lm-action-btn-bg text-lm-action-btn-text': 'bg-dm-action-btn-bg text-dm-action-btn-text'} `}
