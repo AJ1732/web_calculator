@@ -1,12 +1,15 @@
 import React from 'react'
 import { useTheme } from '../../Theme/ThemeProvider';
+import { useValueContext } from '../../Context/ContextProvider';
 
 const Button = ({ children, className, type }) => {
   const { theme } = useTheme();
   const themeBoolean = theme === 'light';
 
+  const { setValue } = useValueContext();
+
   const handleClick = (e) => {
-    console.log(e.target.value, 'clicked!');
+    setValue(e.target.value)
   }
 
   return (

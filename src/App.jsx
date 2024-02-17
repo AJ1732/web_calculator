@@ -1,5 +1,5 @@
 // import { useTheme } from "./Theme/ThemeProvider";
-import Calc from "./components/Sections/Calc";
+import Calc from "./components/Sections/Calculator";
 import Header from "./components/Sections/Header"
 
 function App() {

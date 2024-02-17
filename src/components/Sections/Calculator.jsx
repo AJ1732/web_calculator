@@ -1,14 +1,18 @@
 import React from 'react'
 import { useTheme } from '../../Theme/ThemeProvider';
+import { useValueContext } from '../../Context/ContextProvider';
 import NumButton from '../Buttons/NumButton';
 import OperatorButton from '../Buttons/OperatorButton';
 import EqualButton from '../Buttons/EqualButton';
 import ActionButton from '../Buttons/ActionButton';
 import FunctionButton from '../Buttons/FunctionButton';
 
-const Calc = () => {
+const Calculator = () => {
   const { theme } = useTheme();
   const themeBoolean = theme === 'light';
+
+  const { value } = useValueContext();
+  console.log(value, 'clicked');
 
   return (
     <main className={`
@@ -17,9 +21,9 @@ const Calc = () => {
       m-auto p-8 | duration-300 ease-in-out | rounded-[2.5rem] 
       ${ themeBoolean? 'bg-lm-bg': 'bg-dm-bg' }
     `}>
-      <div className='h-full bg-[#ccc] rounded-2xl'></div>
+      <section className='h-full bg-[#ccc] rounded-2xl'></section>
       
-      <div className={`
+      <section className={`
         m-auto
         grid grid-cols-[repeat(4,_60px)] grid-rows-[40px_repeat(5,_60px)] gap-5 place-content-center
       `}>
@@ -59,9 +63,9 @@ const Calc = () => {
           <OperatorButton className='row-start-1 row-span-1 | rounded-2xl'>+</OperatorButton>
           <EqualButton className='row-start-2 row-span-1 | rounded-2xl'>=</EqualButton>
         </div>
-      </div>
+      </section>
     </main>
   )
 }
 
-export default Calc
+export default Calculator
