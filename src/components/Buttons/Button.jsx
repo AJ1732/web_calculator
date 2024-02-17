@@ -13,8 +13,9 @@ const Button = ({ children, className, type }) => {
     <button 
       className={` 
         ${className}
-        duration-300 ease-in-out
+        origin-center duration-300 ease-in-out
         rounded-2xl text-xl font-medium
+        active:scale-105
         hover:ring hover:bg-opacity-80
         hover:${themeBoolean && 'ring-lm-operator-btn-bg'}
         hover:${type == 'equal' && 'ring-lm-operator-btn-bg'}
