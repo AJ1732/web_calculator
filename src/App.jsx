@@ -1,10 +1,10 @@
-import { useTheme } from "./Theme/ThemeProvider";
+// import { useTheme } from "./Theme/ThemeProvider";
 import Calc from "./components/Sections/Calc";
 import Header from "./components/Sections/Header"
 
 function App() {
-  const { theme } = useTheme();
-  const themeBoolean = theme === 'light';
+  // const { theme } = useTheme();
+  // const themeBoolean = theme === 'light';
 
   return (
     <div className={` 

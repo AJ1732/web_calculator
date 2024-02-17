@@ -1,27 +1,19 @@
 import React from 'react'
+import Button from './Button';
 import { useTheme } from '../../Theme/ThemeProvider';
-
 
 const EqualButton = ({ children, className }) => {
   const { theme } = useTheme();
   const themeBoolean = theme === 'light';
 
-  const handleClick = (e) => {
-    console.log(e.target.value, 'clicked!');
-  }
-
   return (
-    <button 
+    <Button 
       className={` 
         ${className}
-        duration-300 ease-in-out
-        rounded-2xl text-3xl font-medium
         ${themeBoolean? 'bg-lm-equal-btn-bg text-lm-equal-btn-text': 'bg-dm-operator-btn-bg text-dm-operator-btn-text'} `}
-      value={children}
-      onClick={handleClick}
     >
       {children}
-    </button>
+    </Button>
   )
 }
 
