@@ -7,15 +7,21 @@ const CalculatorDisplay = () => {
   const themeBoolean = theme === 'light';
 
   const { value } = useValueContext();
-  const numValue = Number(value)
-  console.log(typeof(numValue), numValue, 'clicked');
-  console.log(typeof(value), value, 'clicked');
+  // const numValue = Number(value)
+  // console.log(typeof(numValue), numValue, 'clicked');
+  console.log(value, 'clicked');
+
 
   return (
     <section className='
       bg-[#ccc] h-full | p-10 rounded-2xl
       grid place-items-end 
     '>
+      {/* Previous Operand */}
+      <div className='text-input-text'></div>
+      {/* Current Operand */}
+      <div className='text-input-text'></div>
+
       <h2 className={`
         font-medium text-5xl
         ${themeBoolean? 'text-lm-answer-text': 'text-dm-answer-text'} 

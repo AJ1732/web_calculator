@@ -5,7 +5,7 @@ import { useTheme } from '../../Theme/ThemeProvider';
 const OperatorButton = ({ children, className }) => {
   const { theme } = useTheme();
   const themeBoolean = theme === 'light';
-
+  
   return (
     <Button 
       type={`operator`}
