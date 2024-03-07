@@ -6,9 +6,7 @@ const CalculatorDisplay = () => {
   const { theme } = useTheme();
   const themeBoolean = theme === 'light';
 
-  const { value } = useValueContext();
-  // const numValue = Number(value)
-  // console.log(typeof(numValue), numValue, 'clicked');
+  const { value, previousOperand, currentOperand, operation } = useValueContext();
   console.log(value, 'clicked');
 
 
@@ -18,9 +16,11 @@ const CalculatorDisplay = () => {
       grid place-items-end 
     '>
       {/* Previous Operand */}
-      <div className='text-input-text'></div>
+      <div className='text-input-text'>
+        {previousOperand} {operation}
+      </div>
       {/* Current Operand */}
-      <div className='text-input-text'></div>
+      <div className='text-input-text'>{currentOperand}</div>
 
       <h2 className={`
         font-medium text-5xl
